@@ -1,0 +1,26 @@
+{
+  "kabul": {
+    "longitude": 69.2075,
+    "latitude": 34.5553
+  },
+  "new_york": {
+    "longitude": -74.006,
+    "latitude": 40.7128
+  },
+  "paris": {
+    "longitude": 2.3522,
+    "latitude": 48.8566
+  },
+  "the_caire": {
+    "longitude": 31.2357,
+    "latitude": 30.0444
+  },
+  "tokyo": {
+    "longitude": 139.6917,
+    "latitude": 35.6895
+  },
+  "moscow": {
+    "longitude": 37.6176,
+    "latitude": 55.7558
+  }
+}

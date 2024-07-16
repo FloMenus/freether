@@ -1,0 +1,15 @@
+.app {
+  background: rgb(116, 235, 208);
+  background: linear-gradient(
+    115deg,
+    rgba(116, 235, 208, 1) 0%,
+    rgba(172, 182, 224, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  padding: 8px;
+  font-family: Lato, sans-serif;
+}

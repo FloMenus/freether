@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="card_left">
+    <h2 class="location">{{ formattedTitle() }}</h2>
+    <div class="icon_and_degrees">
+      <img
+        [src]="'/assets' + weatherCodes[weather.current.weather_code].icon.day"
+        class="weather_icon"
+        alt="Weather Icon"
+      />
+      <p class="temp">{{ weather.current.temperature_2m }}°C</p>
+    </div>
+    <p class="weather_desc">
+      {{ weatherCodes[weather.current.weather_code].description }}
+    </p>
+  </div>
+  <div class="separator separator_vertical"></div>
+  <div class="card_right">
+    <p class="humidity">
+      Humidity: {{ weather.current.relative_humidity_2m }}%
+    </p>
+    <div class="separator separator_horizontal"></div>
+    <p class="wind">Wind speed: {{ weather.current.wind_speed_10m }} km/h</p>
+    <div class="separator separator_horizontal"></div>
+    <p class="rain">Rain: {{ weather.current.rain }}mm</p>
+  </div>
+</div>
