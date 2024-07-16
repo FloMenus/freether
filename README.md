@@ -1,27 +1,35 @@
-# ActedTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
+# Freether, a weather app for Acted test
 
-## Development server
+This is a little weather application and a test for Acted
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+First of all, it was a very interesting test project to developp: I still a ‘beginner’ at Angular, so making a project like this one is a good training for me.
 
-## Code scaffolding
+I’ve made this application with Angular 18.1.0
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Architecture
 
-## Build
+The architecture looks globally like this:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![alt text](https://github.com/flomenus/freether/blob/main/public/architecture.png?raw=true)
+## Development
+As u see, i kept most of the logic inside the App component. It is a very simple
+application, so other developpers can find the logic easily in it.
 
-## Running unit tests
+I’ve used Input ,Output and EventEmitter methods from Angular to pass datas
+and methods through components.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+After a certain time of research, i chose to use the Open-Meteo API because it’s
+simple, free and doesn’t require API key to use it.
 
-## Running end-to-end tests
+After finishing the required part of the test, i implemented the possibility to
+choose anothers weather locations. You can see it in the navbar at the top.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Improvments
+I think the webapp I made is quit good, but could be improved by:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Show more weather data, like hourly datas for the day
+- Improve style
+- Use rxjs to avoid prop-drilling
+- Testing components
