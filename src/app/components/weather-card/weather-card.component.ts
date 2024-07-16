@@ -20,7 +20,4 @@ export class WeatherCardComponent {
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
       .join(' ');
   }
-
-  // currentData(): any {
-  //   const actualTime = new Date();
 }
